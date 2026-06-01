@@ -1,35 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Semantico - Actividad 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantico - Actividad 2.1</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Despegable</li>
+  <header class="top-pagina">
+    <h1>HTML</h1>
 
-                <ul id="dropdown-ejemplo" class="">
-                    <li>Opcion 1</li>
-                    <li>Opcion 2</li>
-                    <li>Opcion 3</li>
-                    <li>Opcion 4</li>
-                    <li>Opcion 5</li>
-                </ul>
+    <nav>
+      <ul class="elementos-nav">
+        <li><a href="index.html">Inicio</a></li>
 
-                <li>Esto no hace nada</li>
-                <li>Esto tampoco hace nada</li>
-                <li>Sobre esta página</li>
-            </ul>
-        </nav>
-    </header>
-    
+        <li>
+          <a href="#" class="desplegable" id="desplegable-id">Desplegable </a>
+          <ul id="dropdown-ejemplo" class="dropdown">
+            <li class="dropdown-opcion opcion1"><a href="#">Seccion extra para cumplir con el segundo archivo HTML que pide la actividad</a></li>
+            <li class="dropdown-opcion  opcion2"><a href="#">Link de relleno que no hace nada</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer-pagina">Sobre esta página</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="/script.js"></script>
-    
+  <main>
+    <section id="primero" class=" container-title">
+      <article id="primero-parte" class="container-title-primero">
+        <span class="texto-titulo">
+          <h2>HTML Semántico</h2>
+          <p>(los archivos detallan cada etiqueta usada)</p>
+        </span>
+        <a href="#segundo" class="link-vermas">Ver más</a>
+      </article>
+    </section>
+
+    <section id="segundo" class="contenedor container-media">
+
+      <header>
+        Zona de la página donde irían imágenes e información importante
+      </header>
+
+      <article>
+
+        <figure>
+          <img src="media/gatosbobos.jpeg" alt="Tres gatos bobos" class="imagen-ejemplo">
+        </figure>
+
+        <div class="info-imagenes">
+          <strong>¿Qué es el HTML semántico? (1)</strong>
+          <small>Importancia en el SEO y la Accesibilidad</small>
+          <p>El HTML semántico es la columna vertebral de una web moderna, accesible y bien optimizada, ya que consiste en estructurar el código utilizando etiquetas que describen fielmente la función y el significado del contenido (como &lt;header&gt;, &lt;main&gt; o &lt;article&gt;) en lugar de depender de contenedores genéricos y vacíos de significado como los &lt;div&gt;. Al adoptar esta práctica, no solo facilitas que los motores de búsqueda como Google indexen y posicionen mejor tu sitio, sino que también permites que los lectores de pantalla y las tecnologías de asistencia guíen correctamente a los usuarios con discapacidades visuales. En definitiva, escribir código semántico transforma una simple interfaz visual en un documento inteligente, limpio y fácil de mantener para cualquier desarrollador.</p>
+        </div>
+
+      </article>
+
+      <article>
+        <div class="info-imagenes">
+          <strong>Reglas cruciales (2)</strong>
+          <small>A la hora de escribir HTML semántico</small>
+          <p>
+          <p>Adoptar una estructura semántica requiere seguir ciertas reglas fundamentales para no confundir a los algoritmos de indexación. En primer lugar, la etiqueta &lt;main&gt; debe ser única en cada documento, ya que representa el núcleo del mensaje de la página. En segundo lugar, los encabezados desde &lt;h1&gt; hasta &lt;h6&gt; deben respetar una jerarquía estricta basada en la importancia del título y nunca elegirse en función del tamaño de fuente que se desea mostrar en pantalla. Por último, nunca se debe abusar de &lt;section&gt; como un sustituto directo de &lt;div&gt;; si un contenedor solo se necesita para aplicar estilos CSS o JavaScript, el uso de un elemento no semántico sigue siendo la opción correcta.</p>
+        </div>
+
+        <figure>
+          <img src="media/pescao.jpeg" alt="Pez malvado" class="imagen-ejemplo">
+        </figure>
+      </article>
+
+    </section>
+
+    <section id="tercero" class="contenedor container-info">
+      <header>
+        Zona donde se explicaría algo de la página
+      </header>
+      <article>
+        <header>Texto totalmente relevante que vale la pena leer</header>
+        <p><a href="https://es.wikipedia.org/wiki/Shawarma">Vivamus id rhoncus sapien.</a> In eleifend leo non ipsum vulputate facilisis. Aliquam dapibus, orci sit amet egestas lacinia, tortor purus aliquet neque, eget consectetur nibh tellus sed lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ex a diam volutpat blandit. Suspendisse potenti. <strong>Mauris mollis augue nisl, non rhoncus nisi hendrerit facilisis.</strong> Nullam placerat dolor sit amet mauris luctus scelerisque. Sed pharetra mollis nunc non egestas. Suspendisse vulputate eros a nisl iaculis cursus.</p>
+
+        <p>Donec non auctor risus. Quisque porttitor sed magna vitae faucibus. Donec vulputate quam vel lorem semper semper. Nullam vitae odio suscipit, luctus orci id, varius risus. Maecenas semper, lacus sed ornare pulvinar, mi mi rhoncus elit, nec maximus purus velit ornare mi. Aliquam sit amet neque ut ex convallis tristique. <strong>Fusce convallis urna enim, id condimentum eros placerat pretium.</strong> Proin non justo vel erat semper laoreet sed eget felis. Sed quam odio, iaculis non scelerisque quis, sodales sit amet nunc. Aliquam fermentum sapien varius vehicula gravida. Curabitur a eleifend lectus.</p>
+      </article>
+
+    </section>
+
+    <header class="header-ultimo">Por último... ¿Qué etiquetas se usaron en esta página?</header>
+
+    <section id="cuarto" class="contenedor cont-cartas">
+      <h5>Para la Estructura y Distribución de la Página</h5>
+      <article class="container-cartas">
+        <div class="tarjeta primera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;header&gt;</strong> se utiliza exclusivamente para definir la cabecera de una página o el bloque introductorio de una sección, agrupando elementos clave como títulos, logotipos, eslóganes o zonas de bienvenida.</p>
+          </span>
+        </div>
+        <div class="tarjeta segunda-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;nav&gt;</strong> está diseñada específicamente para la accesibilidad y delimita un bloque que contiene enlaces de navegación principal, indicando a los motores de búsqueda y lectores de pantalla dónde se encuentra el menú para moverse por el sitio.</p>
+          </span>
+        </div>
+        <div class="tarjeta tercera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;main&gt;</strong> envuelve el contenido central, predominante y único de todo el documento, indicando el corazón de la página y prohibiendo estrictamente que su contenido se repita en otras subpáginas del sitio web.</p>
+          </span>
+        </div>
+      </article>
+      <article class="container-cartas">
+        <div class="tarjeta primera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;section&gt;</strong> se encarga de la división temática del sitio, agrupando contenidos relacionados entre sí que lógicamente forman un capítulo, pestaña o bloque temático autónomo dentro del documento.</p>
+          </span>
+        </div>
+        <div class="tarjeta segunda-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;article&gt;</strong> representa una pieza de información por sí misma independiente, autónoma y reutilizable, siendo ideal para publicaciones de blogs, noticias o tarjetas informativas que mantienen su sentido completo aun si se aíslan del resto de la página.</p>
+          </span>
+        </div>
+        <div class="tarjeta tercera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;footer&gt;</strong> determina el pie de página o el cierre de una sección específica, alojando de forma semántica información de autoría, advertencias legales, avisos de copyright o datos de contacto.</p>
+          </span>
+        </div>
+      </article>
+      <h5>Para la Multimedia y Jerarquía de Texto</h5>
+      <article class="container-cartas">
+        <div class="tarjeta primera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;figure&gt;</strong> actúa como un contenedor semántico orientado al contenido multimedia, agrupando elementos gráficos para indicar que son unidades ilustrativas independientes del flujo del texto principal.</p>
+          </span>
+        </div>
+        <div class="tarjeta segunda-carta">
+          <span>
+            <p>Las etiquetas de encabezado <strong>&lt;h1&gt;</strong>, <strong>&lt;h2&gt;</strong>, <strong>&lt;h3&gt;</strong>, <strong>&lt;h4&gt;</strong>, <strong>&lt;h5&gt;</strong> y <strong>&lt;h6&gt;</strong> definen la importancia jerárquica de los títulos de la página, donde la primera marca el tema primordial y absoluto de todo el documento, y las ssiguientes establecen los subtítulos de las secciones.</p>
+          </span>
+        </div>
+        <div class="tarjeta tercera-carta">
+          <span>
+            <p>La etiqueta <strong>&lt;strong&gt;</strong> aporta un valor semántico de "importancia crucial", peso o urgencia a las palabras que encierra; lo que permite a los lectores de pantalla enfatizar su lectura acústica, diferenciándose de una simple negrita visual.</p>
+          </span>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer id="footer-pagina">
+    <div id="footer-izquierda" class="footer-elem f-izquierda">
+      <p><strong>Sobre esta página:</strong></p>
+      <p>Actividad 2.1 - HTML semántico.</p>
+      <p>José Godoy V-32.006.867</p>
+    </div>
+
+    <nav id="footer-links" class="footer-elem f-centro" aria-label="Navegación del footer. Si">
+      <p>Link(s) super importante:</p>
+      <ul>
+        <li id="footers-link" class="f-links"><a href="https://github.com/kiwig0dd">
+            <bold>&gt;</bold> Mi GitHub
+          </a></li>
+      </ul>
+    </nav>
+
+    <div id="footer-derecha" class="footer-elem f-derecha">
+      <p>Todos los derechos no están reservados &copy; 2026</p>
+    </div>
+
+  </footer>
+
+  <script src="/script.js"></script>
+
 </body>
+
 </html>
