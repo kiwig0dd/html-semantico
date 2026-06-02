@@ -1,1 +1,71 @@
-<h1>hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semántico - Actividad 2.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="top-pagina">
+    <h1>HTML</h1>
+
+    <nav>
+      <ul class="elementos-nav">
+        <li><a href="index.html">Inicio</a></li>
+
+        <li>
+          <a href="#" class="desplegable" id="desplegable-id">Desplegable </a>
+          <ul id="dropdown-ejemplo" class="dropdown">
+            <li class="dropdown-opcion opcion1"><a href="segundo.html">Sección extra para cumplir con el segundo archivo HTML que pide la actividad</a></li>
+            <li class="dropdown-opcion  opcion2"><a href="#">Link de relleno que no hace nada</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer-pagina">Sobre esta página</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenedor sec-video">
+      <h2>Video complementario</h2>
+      <p>Fue añadido en función de cumplir con los requerimientos de la actividad y la demostración del uso de etiquetas de media.</p>
+      <p>Aunque el video fue insertado usando el código proporcionado por la plataforma de <a href="https://youtube.com/">YouTube</a>, se engloba en una etiqueta <code>&lt;figure&gt;</code> para delimitar formalmente el contenido autónomo. Esto indica que el recurso está directamente relacionado con el texto principal, pero posee la cualidad de poder extraerse del flujo del documento sin alterar el sentido global de la lectura.</p>
+
+      <figure class="video-yt">
+        <iframe src="https://www.youtube.com/embed/wW3FPw7CI4g?si=UlPFPpn6re-vax_o" class="video-src" title="Reproductor de video de YouTube - Demostración multimedia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption><strong>Elemento de Video.</strong> Hombre brasileño baila con una nevera al hombro</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer id="footer-pagina">
+    <div id="footer-izquierda" class="footer-elem f-izquierda">
+      <p><strong>Sobre esta página:</strong></p>
+      <p>Actividad 2.1 - HTML semántico.</p>
+      <p>José Godoy V-32.006.867</p>
+    </div>
+
+    <nav id="footer-links" class="footer-elem f-centro" aria-label="Navegación del pie de página">
+      <p>Enlaces súper importantes:</p>
+      <ul>
+        <li id="footers-link" class="f-links">
+          <a href="https://github.com/kiwig0dd"><strong>&gt;</strong> Mi GitHub</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="footer-derecha" class="footer-elem f-derecha">
+      <p>Todos los derechos reservados &copy; 2026</p>
+    </div>
+
+  </footer>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
