@@ -1,0 +1,13 @@
+# Actividad 2.1 - Diseño Web con HTML
+#### FrontEndI206B - Universidad Valle del Momboy
+---
+**Alumno:** José Godoy V-32.006.867
+
+### Actividad:
+> Realizar un sitio web que contenga la semántica HTML y utilice la mayoría de etiquetas HTML explicadas en clase, incluyendo etiquetas de archivos multimedia en la web.
+
+### Página realizada:
+![Inicio de la página](media/captura1.png)
+![Información complementaria](media/captura2.png)
+![Final](media/captura3.png)
+---
