@@ -2,6 +2,7 @@
 #### FrontEndI2026B - Universidad Valle del Momboy
 ---
 **Alumno:** José Godoy V-32.006.867
+---
 Por favor, visitar el [Enlace al video](https://youtu.be/6alT1YLEBzk)
 
 ### Actividad:
