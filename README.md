@@ -1,5 +1,5 @@
 # Actividad 2.1 - Diseño Web con HTML
-#### FrontEndI206B - Universidad Valle del Momboy
+#### FrontEndI2026B - Universidad Valle del Momboy
 ---
 **Alumno:** José Godoy V-32.006.867
 
